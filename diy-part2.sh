@@ -33,7 +33,7 @@ sed -i 's/PATCHVER:=6.1/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型
 # svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile feeds/packages/utils/runc/Makefile   # 添加runc1.0.2
 rm -rf feeds/luci/applications/luci-app-samba4
 rm -rf feeds/luci/applications/luci-app-samba
-rm -rf feeds/lean/autosamba
+rm -rf package/lean/autosamba
 find feeds/luci/applications/ -type d -name 'luci-app-*' | grep -vE 'luci-app-(argone-config|autoreboot|ddns|firewall|netdata|openclash|passwall|smartdns|ttyd|turboacc|upnp)' | xargs rm -rf
 
 
