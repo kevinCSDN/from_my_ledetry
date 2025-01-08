@@ -33,6 +33,8 @@ sed -i 's/PATCHVER:=6.1/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型
 # svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile feeds/packages/utils/runc/Makefile   # 添加runc1.0.2
 rm -rf feeds/luci/applications/luci-app-samba4
 rm -rf feeds/luci/applications/luci-app-samba
+rm -rf feeds/luci/applications/!(luci-app-argone-config|luci-app-autoreboot|luci-app-ddns|luci-app-firewall|luci-app-netdata|luci-app-openclash|luci-app-passwall|luci-app-smartdns|luci-app-ttyd|luci-app-turboacc|luci-app-upnp)
+
 
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 #git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
